@@ -119,7 +119,9 @@ export default function Predict() {
         <textarea
           id="textArea"
           name="textArea"
-          className="w-full max-w-xl z-10 text-white p-4 bg-[#42057f82] border rounded-xl h-full max-h-[400px] "
+          className={`w-full max-w-xl z-10 ${
+            isLoading && "opacity-25"
+          } text-white p-4 bg-[#42057f82] border rounded-xl h-full max-h-[400px]`}
           placeholder="Place your text here ..."
           value={text}
           onChange={(e) => {
