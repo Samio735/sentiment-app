@@ -30,7 +30,7 @@ export default function Predict() {
       <div className="rounded-full absolute top-20 -left-40 w-80 h-80 bg-[#42057F] blur-3xl -z-10"></div>
       <div className="rounded-full absolute bottom-20 -right-40 w-80 h-80 bg-[#42057F] blur-3xl -z-10"></div>
       <h1 className="text-5xl mt-10 text-center">Sentiment Analyzer.ai</h1>
-      <div className="w-full bg-[#42057f82] relative h-20 border border-[#dbbae382] my-4 rounded-full">
+      <div className="w-full max-w-2xl bg-[#42057f82] relative h-20 border border-[#dbbae382] my-4 rounded-full">
         <div className="w-[75px] h-20 invisible bg-gray-500 rounded-full"></div>
 
         <div
