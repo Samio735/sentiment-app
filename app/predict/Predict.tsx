@@ -1,3 +1,4 @@
+"use client";
 import { useState } from "react";
 import { throttle } from "lodash";
 import { data } from "autoprefixer";
