@@ -1,13 +1,14 @@
 "use client";
 import { useState } from "react";
-import { throttle } from "lodash";
 import { data } from "autoprefixer";
 
 export default function Predict() {
   const [text, setText] = useState("Hellooo");
   const [prediction, setPrediction] = useState("neutral");
+  const [isLoading, setIsLoading] = useState(false);
   async function analyse() {
     const input_phrase = text;
+    setIsLoading(true);
     const data = await fetch(
       "https://laughing-guide-r554ppw9v7gfw749-5000.app.github.dev/predict",
       {
@@ -21,6 +22,7 @@ export default function Predict() {
 
     const json = await data.json();
     setPrediction(json.predicted_label);
+    setIsLoading(false);
   }
 
   return (
