@@ -123,7 +123,10 @@ export default function Predict() {
             setText(e.target.value);
           }}
         ></textarea>
-        <button className="bg-[#6f2eafce] w-full rounded-md p-2" type="submit">
+        <button
+          className="max-w-xl bg-[#6f2eafce] w-full rounded-md p-2"
+          type="submit"
+        >
           Submit
         </button>
       </form>
